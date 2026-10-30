@@ -11,8 +11,7 @@ on:
       - 'platforms/**'
       - '.github/workflows/build.yml'
       - 'CMakeLists.txt'
-
-
+      
 env:
   GENERAL_FLAGS: "-DRETRO_DISABLE_PLUS=OFF -DCMAKE_BUILD_TYPE=Release"
   # Normally you would use $VCPKG_INSTALLATION_PATH, but it's broken...so hardcode C:/vcpkg
