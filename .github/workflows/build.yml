@@ -9,8 +9,8 @@ on:
       - platforms/**
       - .github/workflows/build.yml
       - CMakeLists.txt
-    branches:
-      - master
+     branches: [ main ]
+  workflow_dispatch:
 
 env:
   GENERAL_FLAGS: "-DRETRO_DISABLE_PLUS=OFF -DCMAKE_BUILD_TYPE=Release"
