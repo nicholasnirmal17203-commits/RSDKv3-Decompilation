@@ -2,15 +2,16 @@ name: Build RSDKv3
 
 on:
   push:
+    branches:
+      - master
     paths:
-      - android/**
-      - dependencies/**
-      - RSDKv3/**
-      - platforms/**
-      - .github/workflows/build.yml
-      - CMakeLists.txt
-       - branches:
-      - master  
+      - 'android/**'
+      - 'dependencies/**'
+      - 'RSDKv3/**'
+      - 'platforms/**'
+      - '.github/workflows/build.yml'
+      - 'CMakeLists.txt'
+
 
 env:
   GENERAL_FLAGS: "-DRETRO_DISABLE_PLUS=OFF -DCMAKE_BUILD_TYPE=Release"
